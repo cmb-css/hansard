@@ -26,7 +26,7 @@ def cli():
     print('output directory: {}'.format(args.outdir))
     print('start date: {}'.format(args.start_date))
     print('end date: {}'.format(args.end_date))
-    print('page: {}').format(args.page)
+    print('page: {}'.format(args.page))
 
     if args.command == 'retrieve':
         retrieve(search_term=args.search,
