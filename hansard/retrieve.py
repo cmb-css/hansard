@@ -62,8 +62,8 @@ def retrieve(search_term, outdir, start_date, end_date, page=1):
                                 json.dump(
                                     debate, f, ensure_ascii=False, indent=4)
                             debates += 1
-                        except HTTPError as http_err:
-                            print('HTTP error occurred: {}'.format(http_err))
+                        except Exception as e:
+                            print('HTTP error occurred: {}'.format(e))
                             print(debate['url'])
                             errors += 1
                 else:
